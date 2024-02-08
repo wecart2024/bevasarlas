@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\csaladadat;
 
 class CsaladController extends Controller
 {
@@ -11,7 +12,8 @@ class CsaladController extends Controller
      */
     public function index()
     {
-        //
+        $csaladadatok = csaladadat::all();
+        return view('csalad.index');
     }
 
     /**
