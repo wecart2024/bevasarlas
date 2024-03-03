@@ -1,0 +1,369 @@
+.body3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	z-index: 3;
+  }
+
+.container6 {
+	position: absolute;
+	background: #258276;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	width: 1000px;
+	max-width: 100%;
+	min-height: 620px;
+	display: flex;
+	justify-content: center; 
+	align-items: flex-start; 
+	padding-bottom: 20px;
+	
+  }
+  .homalyos-hatter5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px); 
+}
+
+.hatszog-settings {
+    width: 50px; 
+    height: 400px; 
+    background-color: #CCA547;
+    clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+    transform: rotate(90deg) translate(-50%, -50%); 
+    position: absolute; 
+    top: -25.5%; 
+    left: 27%;
+  }
+  .doboz2
+{
+    width: 900px;
+	  max-width: 100%;
+	  min-height: 520px;
+    align-items: center;
+    position: absolute; 
+    margin-top: 5%;
+    
+}
+.close-button3 {
+	size: 15px;
+
+	&:before, &:after {
+		width: 30px;
+		height: 10px;
+		right: -2%;
+		transform: rotate(-45deg);
+		content: '';
+		position: absolute;
+		display: block;
+		background-color: #fff;
+		transition: all 0.2s ease-out;
+	}
+
+	&:after {
+		transform: rotate(45deg);
+	}
+
+	&:hover {
+
+		&:before, &:after {
+			transform: rotate(0deg);
+		}
+	}
+}
+.topright3 {
+	
+	text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10 0px rgba(0, 0, 0, 0.22);
+	margin-top: 15px;
+	
+  }
+
+  .container3 {
+	position: absolute;
+	top: 10px;
+	right: 16px;
+	color: #FFF; 
+	cursor: pointer; 
+  }
+
+  .szoveg-container6 {
+    position: absolute;
+    width: 250px;
+    top: 44%;
+    left: -197%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg)
+  }
+  .szoveg2 {
+    margin: 0;
+    font-weight:800;
+	  min-width: 200px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 14px 38px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .teglalap4 {
+    position: relative;
+	  margin-top: -8%;
+    width: 370px;
+    height: 500px;
+    background-color:transparent;
+    border-radius: 10px;
+  }
+
+  .teglalap-list-settings
+  {
+    padding-top: 18%;
+    margin-left: 6%;
+    
+  }
+
+  .kis-doboz2 {
+    width: 270px; 
+    height: 45px;
+    border-radius: 15px;
+    background-color: #ffffff; 
+    margin: 20px; 
+  }
+
+  .teglalap3-2
+  {
+    flex-wrap: wrap;
+	  margin-left: 35%;
+	  margin-top: 4%;
+  }
+  .teglalap5 {
+    position: relative;
+    width: 330px;
+    height: 180px;
+	  margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 11%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 10px; 
+  }
+  .teglalap6 {
+    position: relative;
+    width: 420px;
+    height: 140px;
+	  margin-right: 25%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 10px; 
+  }
+  .szoveg-container6 {
+    position: absolute;
+    width: 200px;
+    top: 35%;
+    left: -150%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg)
+  }
+  .szoveg6 {
+
+    font-weight:800;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 14px 38px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .th{
+	margin-left: 10%;
+  }
+  .button-box
+  {
+	  position: relative;
+    width: 420px;
+    height: 100px;
+	  margin-right: 25%;
+    background-color:transparent;
+    border-radius: 10px;
+	  margin-top: 2%;
+    margin-right: 10px; 
+  }
+  .kitalalt-nev2
+  {
+	background: #264653;
+	border: none;
+    position: absolute;
+    width: 325px; 
+    height: 60px;
+    margin: 20px; 
+    left: 6%;
+    top: 20%;
+  }
+  .kitalalt-nev2::placeholder{
+	text-align: center;
+	font-weight: 500;
+	color: white;
+  }
+
+.nev-button-settings
+{
+    flex-wrap: wrap;
+    margin-left: 9%;
+}
+.nev 
+{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    margin-top: 13%;
+    margin-left: 10px;
+    background-color: #D9D9D9;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-right: 10px; 
+}
+.nev::placeholder
+{
+  color: black;
+  font-weight: 700;
+  margin-left: 3%;
+}
+.nev-button
+{
+    position: relative;
+    width: 225px;
+    height: 60px;
+    margin-top: 8%;
+    margin-left: 8%;
+    background-color: #264653;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-right: 10px; 
+}
+.save 
+{
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+.marquee-container4 {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+.marquee-wrapper4 {
+  display: flex;
+ 
+}
+.marquee-container3 {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 3%;
+  width: 100%;
+}
+
+.marquee-wrapper3 {
+  display: flex;
+ 
+}
+
+.marquee-box2 {
+  width: 110px; 
+  height: 120px; 
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.25), 0 10 0px rgba(0, 0, 0, 0.22);
+  background-color:#264653; 
+  margin-right: 15px;
+}
+.marquee-box3 {
+  width: 60px; 
+  height: 60px;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.25), 0 10 0px rgba(0, 0, 0, 0.22);
+  background-color:transparent; 
+}
+.download
+{
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+.trash
+{
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+.information
+{
+  width: 70px;
+  height: 70px;
+  color: white;
+  margin-right: 5%;
+}
+.add
+{
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+.information-container
+{
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 90%;
+  height: 60px;
+  background-color:transparent;
+}
+.information-box {
+  width: 100px;
+  height: 130px; 
+  margin-right: 6%;
+  font-weight: 300;
+  border:none;
+  text-align: left;
+  box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.25), 0 10 0px rgba(0, 0, 0, 0.22);
+  background-color:transparent; 
+}
+
+.trash2
+{
+  width: 40px;
+  height: 40px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  margin-left: 4%;
+}
+.download2
+{
+  width: 40px;
+  height: 40px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+.add2
+{
+  width: 40px;
+  height: 40px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  margin-left: 4%;
+}

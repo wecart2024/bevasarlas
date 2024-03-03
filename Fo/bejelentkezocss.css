@@ -13,7 +13,7 @@
     --heading-medium: 3.6rem;
     --heading-small: 2.4rem;
     --paragraph: 1.11rem;
-    --navbar-buttons: 2.4rem;
+    --navbar-buttons: 2.6rem;
     --transition-main: .175, .685, .32;
     --font-main: "Poppins";
 }
@@ -25,8 +25,10 @@
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	
 }
 .homalyos-hatter {
+	z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -122,6 +124,7 @@ form {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	
 }
 
 .form-container {

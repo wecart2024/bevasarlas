@@ -1,0 +1,102 @@
+.keresooldal
+{
+    max-height: 30%;
+    margin: auto;
+    width: 80%;
+}
+.search2, .category2, .keres2::placeholder{
+	color: #000000;
+	font-size: 19px;
+	font-weight: 500;
+
+}
+.category2::placeholder{
+	color: #000000;
+	text-align: center;
+	font-size: 19px;
+	font-weight: 500;
+
+}
+  .search2, .category2, .keres2 {
+	max-height: 80%;
+	min-height: 60px;
+	width: 100%;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+  }
+  .ossz2{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+	font-family: 'Montserrat', sans-serif;
+  }
+  .category2 {
+	width: 40%;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
+	background-color: #CCA547;
+  }
+
+  .keres2 {
+	width: 20%;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	background-color: #E9C46A;
+
+  }
+  .keres2:hover {
+	background-color: #e7a90b;
+	color: rgb(0, 0, 0);
+  }
+  .search2{
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	
+  }
+  .search-icon2
+{
+	color: #000000;
+	font-size: 30px;
+	font-weight: 500;
+  margin-top: 6%;
+}
+.Profilimage2
+{
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-top: -8%;
+}
+.flexbox-col2 {
+    justify-content: center;
+    flex-direction: column;
+}
+.marquee-container-search {
+    overflow: hidden;
+    width: 90%;
+  }
+  
+  .marquee-wrapper-search {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 8% ;
+   
+  }
+  .marquee-wrapper-search2 {
+    display: flex;
+    margin-left: 8% ;
+    margin-top: 14px;
+  }
+  .marquee-box-search {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 14px;
+    box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.25), 0 10 0px rgba(0, 0, 0, 0.22);
+    background-color: #2A9D8F; 
+    margin-right: 25px;
+  }
