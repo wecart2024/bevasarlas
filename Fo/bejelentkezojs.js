@@ -3,24 +3,24 @@
 
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+const container2 = document.getElementById('container2');
 
 signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
+	container2.classList.add("right-panel-active");
 });
 
 signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
+	container2.classList.remove("right-panel-active");
 });
 
 //Regisztráció és Bejelentkezés megjelenítés gomb nyomásra
 
 function toggleLoginForm() {
-    var container = document.getElementById('megjelenitoGomb');
-    if (container.style.display === 'none') {
-        container.style.display = 'block';
+    var container2 = document.getElementById('megjelenitoGomb');
+    if (container2.style.display === 'none') {
+        container2.style.display = 'block';
     } else {
-        container.style.display = 'none';
+        container2.style.display = 'none';
     }
   }
 
@@ -35,7 +35,7 @@ function toggleLoginForm() {
         megjelenitoGomb.style.display = "block";
     });
 
-    document.querySelector(".container").addEventListener("click", function(event) {
+    document.querySelector(".container2").addEventListener("click", function(event) {
         event.stopPropagation(); 
     });
 

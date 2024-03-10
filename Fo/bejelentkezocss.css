@@ -18,6 +18,7 @@
     --font-main: "Poppins";
 }
 .body {
+	z-index: 14;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,7 +29,7 @@
 	
 }
 .homalyos-hatter {
-	z-index: 2;
+	z-index: 13;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,16 +42,19 @@
     backdrop-filter: blur(10px); 
 }
 .h1 {
-	font-weight: bold;
+	font-weight: 900;
 	font-size: 24px;
 	margin: 0;
+	
 }
 
 .h2 {
 	text-align: center;
+	color: white;
 }
 
 .p {
+	color: white;
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -70,7 +74,7 @@
 }
 
 .button {
-	border-radius: 10px;
+	border-radius: 15px;
 	border: 1px solid hsl(var(--background-secondary-dark));
 	background-color: hsl(var(--background-secondary));
 	color: #FFFFFF;
@@ -96,7 +100,7 @@
     color:rgb(0, 0, 0);
 }
 
-form {
+.form {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -109,12 +113,13 @@ form {
 
 .input {
 	background-color: #eee;
+	border-radius: 10px;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
 }
 
-.container {
+.container2 {
 	background: white;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
@@ -124,7 +129,6 @@ form {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
-	
 }
 
 .form-container {
@@ -137,10 +141,10 @@ form {
 .sign-in-container {
 	left: 0;
 	width: 50%;
-	z-index: 2;
+	z-index: 4;
 }
 
-.container.right-panel-active .sign-in-container {
+.container2.right-panel-active .sign-in-container {
 	transform: translateX(100%);
 }
 
@@ -151,7 +155,7 @@ form {
 	z-index: 1;
 }
 
-.container.right-panel-active .sign-up-container {
+.container2.right-panel-active .sign-up-container {
 	transform: translateX(100%);
 	opacity: 1;
 	z-index: 6;
@@ -181,7 +185,7 @@ form {
 	z-index: 100;
 }
 
-.container.right-panel-active .overlay-container{
+.container2.right-panel-active .overlay-container{
 	transform: translateX(-100%);
 }
 
@@ -201,7 +205,7 @@ form {
 	transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.container2.right-panel-active .overlay {
   	transform: translateX(50%);
 }
 
@@ -224,7 +228,7 @@ form {
 	transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.container2.right-panel-active .overlay-left {
 	transform: translateX(0);
 }
 
@@ -233,7 +237,7 @@ form {
 	transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.container2.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
 
