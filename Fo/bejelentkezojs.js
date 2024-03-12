@@ -24,6 +24,14 @@ function toggleLoginForm() {
     }
   }
 
+  function toggleLoginForm() {
+    var container2 = document.getElementById('megjelenitoGombb');
+    if (container2.style.display === 'none') {
+        container2.style.display = 'block';
+    } else {
+        container2.style.display = 'none';
+    }
+  }
 //Háttér elhomályosítása amikor megjelenik a Regisztráció és Bejelentkezés és gomb kezelése container kezelése
 
   document.getElementById("megjelenitoGomb").addEventListener("click", function() {
@@ -45,3 +53,21 @@ function toggleLoginForm() {
     });
 });
 
+document.getElementById("megjelenitoGombb").addEventListener("click", function() {
+    var homalyosHatter = document.getElementById("homalyosHatter");
+    homalyosHatter.style.display = "flex";
+
+    homalyosHatter.addEventListener("click", function() {
+        homalyosHatter.style.display = "none";
+        megjelenitoGombb.style.display = "block";
+    });
+
+    document.querySelector(".container2").addEventListener("click", function(event) {
+        event.stopPropagation(); 
+    });
+
+    megjelenitoGombb.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        event.stopPropagation();
+    });
+});
