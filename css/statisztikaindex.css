@@ -1,0 +1,98 @@
+.doboz
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+}
+.svg{
+  margin-top: -60%;
+  max-height: 200vh;
+  min-width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: -1;
+}
+.teglalap1 {
+    position: relative;
+    width: 570px;
+    height: 570px;
+    margin: 2%;
+    background-color: #38BDAD;
+    border-radius: 10px;
+    margin-right: 10px; 
+  }
+.teglalap2 {
+    position: relative;
+    width: 330px;
+    height: 150px;
+    margin: 5%;
+    background-color: #38BDAD;
+    border-radius: 10px;
+    margin-right: 10px; 
+  }
+
+  
+  .hatszog {
+    width: 50px; 
+    height: 250px; 
+    background-color: #CCA547;
+    clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+    transform: rotate(90deg) translate(-50%, -50%); 
+    position: absolute; 
+    top: -100px; 
+    left: 22%;
+  }
+
+  .szoveg-container1 {
+    position: absolute;
+    width: 150px;
+    top: 35%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg)
+  }
+  .szoveg-container2 {
+    position: absolute;
+    width: 150px;
+    top: 35%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg)
+  }
+  .szoveg-container3 {
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg)
+  }
+  .szoveg-container4 {
+    position: absolute;
+    width: 150px;
+    top: 35%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg)
+  }
+  .szoveg {
+    margin: 0;
+    font-weight:800;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 14px 38px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .Profilimage
+  {
+    width: 70px;
+    height: 70px;
+    float: right;
+    margin-top: -1.5%;
+  }

@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>WECART | Kezdőlap</title>             
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel='stylesheet' href='bejelentkezocss.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="image/icon1.png" type="image/x-icon">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/Foindex.css" rel="stylesheet">
+        <link href="css/loader.css" rel="stylesheet">
+    </head>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div> 
+      </div>
+    <body>
+        
+        <main>
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="Foindex.html">
+                        <span class="navbar-brand-text">
+                            WECART
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Bejelentkezés</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Kezdőlap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Informáciok</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Rólunk</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Kapcsolat</a>
+                            </li>
+                            
+                        </ul>
+
+                        <div class="d-none d-lg-block ms-lg-3">
+                            <a class="btn custom-btn custom-border-btn" role="button" id="megjelenitoGomb" onclick="toggleLoginForm()" >Bejelentkezés</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="homalyos-hatter" id="homalyosHatter" style="display: none">
+                <div class="body">
+                <div class="container2"  id="container2" >
+                  <div class="form-container sign-up-container">
+                    <form class="form" action="#">
+                      <a class="h1">Regisztráció</a>
+                            <span class="span">Nincs még fiókód, hozz létre egyet!</span>
+                            <input class="input" type="text" placeholder="Név" />
+                            <input class="input" type="email" placeholder="E-mail" />
+                            <input class="input" type="password" placeholder="Jelszó" />
+                            <input class="input" type="password" placeholder="Jelszó ismét" />
+                      <button class="button">Létrehozás</button>
+                    </form>
+                  </div>
+                  <div class="form-container sign-in-container">
+                    <form class="form" action="#">
+                      <a class="h1">Bejelentkezés</a>
+                      <span class="span">Ha már van fiókód</span>
+                      <input class="input" type="email" placeholder="E-mail" />
+                      <input class="input" type="password" placeholder="Jelszó" />
+                      <a class="a" href="#">Elfelejtetted a jelszót?</a>
+                      <button class="button">Belépés</button>
+                    </form>
+                  </div>
+                  <div  class="overlay-container">
+                    <div class="overlay">
+                      <div class="overlay-panel overlay-left">
+                        <a class="h1">Üdvözöllek újra</a>
+                        <p class="p">Örülök hogy újra itt vagy!</p>
+                        <button  class="ghost button" id="signIn">Bejelentkezés</button>
+                      </div>
+                      <div class="overlay-panel overlay-right">
+                        <a class="h1">Üdvözöllek!</a>
+                        <p class="p">Ez itt a mi kis élelmiszer információs oldalunk</p>
+                        <button  class="ghost button" id="signUp">Regisztráció</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <svg class="svg"  preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+                    <defs>
+                        <style>
+                            @keyframes rotate {
+                           0% {
+                                    transform: rotate(0deg);
+                                }
+                                100% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            .out-top {
+                            
+                                animation: rotate 7s linear infinite;
+                                transform-origin: 13px 25px;
+                                filter: blur(3px);
+                                z-index: 1;
+                            }
+                            
+                            .in-bottom {
+                                animation: rotate 7s linear infinite;
+                                transform-origin: 84px 83px;
+                                filter: blur(3px);
+                                z-index: -1;
+                            }
+                        </style>
+                    </defs>
+                    <path fill="#38BDAD" class="out-top" style="z-index: -1;" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+                        <path fill="#38BDAD" class="in-bottom" style="z-index: -1;" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+                  </svg>
+                <div class="section-overlay"></div>
+                <div class="container flexslider">
+                    <div class="row">
+                        <div class="col-lg-6b col-12 mb-5 mb-lg-0 text-i">
+                            <h2 class="text-white">Tárold, rendezd, </h2>
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>élvezd</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">WECART</b>
+                                    <b>a legjobb</b>
+                                    <b>vásárlás kezelő oldal</b>
+                                </span>
+                            </h1>
+                            <div id="megjelenitoGombb" onclick="toggleLoginForm()" class="custom-btn-group">
+                                <a class="btn custom-btn2 smoothscroll me-3">Regisztrálj</a>
+
+                                <a href="#section_3" class="link smoothscroll">További információk</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6b col-12">
+                            <div class="ratio ratio-16x9">
+                                <img class="logo3"  src="./image/logo3.png" alt="Profil">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+            <section class="about-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12 text-center">
+                            <div class="section-bg-image-block2" id="section-img">
+                                <h2 class="mb-lg-3">Mindent egy helyen, minden egy gombnyomásra.</h2>
+                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                    <div class="input-group input-group-lg"> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                           
+                                        </li>
+                                        <li class="social-icon-item">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="member-block-info d-flex align-items-center">                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">   
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">    
+                                        </li>
+                                        <li class="social-icon-item">   
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="member-block-info d-flex align-items-center">          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-bg-image">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12" id="section_2">
+                            <div class="section-bg-image-block3">
+                                <h2 class="mb-lg-3 cim">Információk</h2>
+                                <div class="ag-offer-block">
+                                    <div class="ag-format-container">
+                                      <ul class="ag-offer_list">
+                                        <li class="ag-offer_item">
+                                          <div class="ag-offer_visible-item">
+                                            <div class="ag-offer_img-box">
+                                              <img src="svgicons/admin-alt.svg" class="ag-offer_img" alt="" />
+                                            </div>
+                                            <div class="ag-offer_title">
+                                              Kezelés
+                                            </div>
+                                          </div>
+                                          <div class="ag-offer_hidden-item">
+                                            <p class="ag-offer_text">
+                                              A legkönnyebb modon tudja a lista tartalmát kezelni
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li class="ag-offer_item">
+                                          <div class="ag-offer_visible-item">
+                                            <div class="ag-offer_img-box">
+                                              <img src="svgicons/shopping-cart.svg" class="ag-offer_img" alt="" />
+                                            </div>
+                                            <div class="ag-offer_title">
+                                              Élelmiszerek
+                                            </div>
+                                          </div>
+                                          <div class="ag-offer_hidden-item">
+                                            <p class="ag-offer_text">
+                                             Nálunk, az oldal tartalma 99%-ba élelmiszert lehet hozzáadni a saját listájához
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li class="ag-offer_item">
+                                          <div class="ag-offer_visible-item">
+                                            <div class="ag-offer_img-box">
+                                              <img src="svgicons/download.svg" class="ag-offer_img" alt="" />
+                                            </div>
+                                            <div class="ag-offer_title">
+                                              Feltöltés
+                                            </div>
+                                          </div>
+                                          <div class="ag-offer_hidden-item">
+                                            <p class="ag-offer_text">
+                                              A listádat eltudod menteni és fel is tudod tölteni, hogy máskor is megtaláld
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li class="ag-offer_item">
+                                          <div class="ag-offer_visible-item">
+                                            <div class="ag-offer_img-box">
+                                              <img src="svgicons/stats.svg" class="ag-offer_img" alt="" />
+                                            </div>
+                                            <div class="ag-offer_title">
+                                              Statisztikák
+                                            </div>
+                                          </div>
+                                          <div class="ag-offer_hidden-item">
+                                            <p class="ag-offer_text">
+                                              A listád tartalmaibol (felhasználótól függöen) készít folyamatos statisztikát
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li class="ag-offer_item">
+                                          <div class="ag-offer_visible-item">
+                                            <div class="ag-offer_img-box">
+                                              <img src="svgicons/users.svg" class="ag-offer_img" alt="" />
+                                            </div>
+                                            <div class="ag-offer_title">
+                                              Felhasználok
+                                            </div>
+                                          </div>
+                                          <div class="ag-offer_hidden-item">
+                                            <p class="ag-offer_text">
+                                             Van lehetöséged egy vagy több felhasználóval listázni termékeit
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li class="ag-offer_item">
+                                          <div class="ag-offer_visible-item">
+                                            <div class="ag-offer_img-box">
+                                              <img src="svgicons/trash.svg" class="ag-offer_img" alt="" />
+                                            </div>
+                                            <div class="ag-offer_title">Törlés</div>
+                                          </div>
+                                          <div class="ag-offer_hidden-item">
+                                            <p class="ag-offer_text">
+                                              Ahogy mentésre van lehetőséged, így természetesen törlésre is
+                                            </p>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+            <section class="events-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-lg-5 mb-4">Mi is a céljunk</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="custom-block-image-wrap">
+                                <a>
+                                    <div class="video-container">
+                                        <video class="custom-block-image img-fluid" autoplay loop muted plays-inline>
+                                          <source src="image/video1.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                </a>
+
+                                <div class="custom-btn-wrap">
+                                    <a class="btn custom-btn">További tudnivalok</a>
+                                </div>
+                            </div>     
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block-image-wrap">
+                                <div class="custom-block-info">
+                                    <a  class="events-title mb-2">Listák</a>
+                                    <p class="mb-0"> A listákkal nyomon tudja követni hogy jelenleg milyen élelmiszerekre van szükség, és milyen élelmiszerek vannak birtokába</p>
+                                </div>
+                            </div>
+                            <div class="custom-block-info">
+                                <p class="mb-0">Itt tudsz a Listához hozzá adni és elvenni. Van külön egy szelyélyes lista és van családi lista is, a személytöl fűggően</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="custom-block-image-wrap">
+                                <div class="custom-block-info">
+                                    <a class="events-title mb-2">Statisztika</a>
+                                    <p class="mb-0">Automatikusan a lista termékeiböl csinál egy statisztikát, átlagár mennyiség alapján</p>
+                                </div>
+                            </div>
+                            <div class="custom-block-info">
+                                <p class="mb-0">Kereső segitségével, könnyeben, és egyszerübben megtalálja  a kivánt termékekket.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block-image-wrap">
+                                <a>
+                                    <div class="video-container">
+                                        <video class="custom-block-image img-fluid" autoplay loop muted plays-inline>
+                                          <source src="image/video1.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                </a>
+                                <div class="custom-btn-wrap">
+                                    <a class="btn custom-btn">További tudnivalok</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="custom-block-image-wrap">
+                                <a>
+                                    <div class="video-container">
+                                        <video class="custom-block-image img-fluid" autoplay loop muted plays-inline>
+                                          <source src="image/video1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </a>
+                                <div class="custom-btn-wrap">
+                                    <a class="btn custom-btn">További tudnivalok</a>
+                                </div>
+                            </div>     
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block-image-wrap">
+                                <div class="custom-block-info">
+                                    <a  class="events-title mb-2">Listák</a>
+                                    <p class="mb-0"> A listákkal nyomon tudja követni hogy jelenleg milyen élelmiszerekre van szükség, és milyen élelmiszerek vannak birtokába</p>
+                                </div>
+                            </div>
+                            <div class="custom-block-info">
+                                <p class="mb-0">Itt tudsz a Listához hozzá adni és elvenni. Van külön egy szelyélyes lista és van családi lista is, a személytöl fűggően</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="custom-block-image-wrap">
+                                <div class="custom-block-info">
+                                    <a class="events-title mb-2">Statisztika</a>
+                                    <p class="mb-0">Automatikusan a lista termékeiböl csinál egy statisztikát, átlagár mennyiség alapján</p>
+                                </div>
+                            </div>
+                            <div class="custom-block-info">
+                                <p class="mb-0">Kereső segitségével, könnyeben, és egyszerübben megtalálja  a kivánt termékekket.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block-image-wrap">
+                                <a>
+                                    <div class="video-container">
+                                        <video class="custom-block-image img-fluid" autoplay loop muted plays-inline>
+                                          <source src="image/video1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </a>
+                                <div class="custom-btn-wrap">
+                                    <a class="btn custom-btn">További tudnivalok</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        <footer class="site-footer"  id="section_5">     
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <span class="navbar-brand-text">
+                                WECART
+                            </span>
+                        </a>
+                        <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h5 class="site-footer-title mb-4">Elérhetőségek</h5>
+                        <p class="copyright-text2"><a>+0620578990</a><a>wecart2024@gmail.com</a></p>
+                        <br>
+                        <p class="copyright-text">Copyright © 2024 WECART</p>
+                    </div>
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0 contact-footer">
+                            <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form">
+                                <h4 class="text-white mb-4">Kapcsolat</h4>
+
+                                    <div class="form-floating">
+                                        <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                        
+                                        <label for="floatingInput">Teljes név</label>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                        
+                                        <label for="floatingInput">E-mail</label>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
+                                        
+                                        <label for="floatingTextarea">Üzenet</label>
+                                    </div>
+
+                                    <button type="submit" class="form-control">Küldés</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+            
+        </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src='bejelentkezojs.js'></script>
+        <script src="js/custom.js"></script>
+        <script src="js/loader.js"></script>
+    </body>
+    <script>
+            $(window).load(function() {
+              $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: false,
+                prevText: "&#xf104;",
+                nextText: "&#xf105;"
+              });
+      
+              $('body').addClass('loaded');
+            });
+
+
+            (function ($) {
+                $(function () {  });})(jQuery);
+          </script>
+</html>
